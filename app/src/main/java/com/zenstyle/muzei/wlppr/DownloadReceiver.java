@@ -1,6 +1,5 @@
 package com.zenstyle.muzei.wlppr;
 
-import android.app.Activity;
 import android.app.DownloadManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -26,7 +25,7 @@ public class DownloadReceiver extends BroadcastReceiver {
             String url = extra.getString(URL);
             String title =  extra.getString(TITLE);
 
-            DownloadManager dlManager = (DownloadManager) context.getSystemService(context.DOWNLOAD_SERVICE);
+            DownloadManager dlManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
             dlManager.enqueue(new DownloadManager.Request(Uri.parse(url))
                     .setTitle(title)
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED));

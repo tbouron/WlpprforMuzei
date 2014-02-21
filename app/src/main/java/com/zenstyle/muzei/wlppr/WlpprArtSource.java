@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
-import android.text.TextUtils;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.apps.muzei.api.Artwork;
@@ -139,9 +137,18 @@ public class WlpprArtSource extends RemoteMuzeiArtSource {
         }
 
         Random random = new Random();
-        WlpprService.Wallpaper wallpaper = response.wallpapers.get(random.nextInt(response.wallpapers.size()));
-        int id = wallpaper.id;
-        String token = Integer.toString(id);
+        WlpprService.Wallpaper wallpaper;
+        String token;
+        int id;
+        while (true) {
+            wallpaper = response.wallpapers.get(random.nextInt(response.wallpapers.size()));
+            id = wallpaper.id;
+            token = Integer.toString(id);
+            if (!token.equals(currentToken)) {
+                break;
+            }
+        }
+
         String url = String.format("http://wlppr.com/wallpapers/%1$d/%1$d.jpg", id);
 
         LOGD(TAG, "Wallpaper URL: " + url);
