@@ -10,5 +10,6 @@ build/
 local.properties
 keystore.properties
 
-# Windows thumbnail db
+# Windows / Mac OS thumbnail db
 .DS_Store
+Thumbs.db
