@@ -3,7 +3,7 @@
 
     <string name="app_name">Wlppr for Muzei</string>
     <string name="source_name">Wlppr</string>
-    <string name="source_description">A new wallpaper every day</string>
+    <string name="source_description">A new wallpaper everyday</string>
     <string name="wallpaper_name">Wallpaper #%d</string>
     <string name="byline">Powered by wlppr.com</string>
 

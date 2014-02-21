@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wlppr pour Muzei</string>
+    <string name="source_name">Wlppr</string>
+    <string name="source_description">Un nouveau fond d\'écran tous les jours</string>
+    <string name="wallpaper_name">Fond d\'écran #%d</string>
+    <string name="byline">Propulsé par wlppr.com</string>
+
+    <string name="action_no_artwork_to_share">Aucune œuvre à partager pour le moment. Veuillez réesayer plus tard</string>
+    <string name="action_no_artwork_to_download">Aucune œuvre à télécharger pour le moment. Veuillez réesayer plus tard</string>
+    <string name="action_share_artwork">Partager l\'œuvre</string>
+    <string name="action_download_artwork">Télécharger l\'œuvre</string>
+
+</resources>
