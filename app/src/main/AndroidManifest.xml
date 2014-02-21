@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zenstyle.muzei.wlppr" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <service android:name=".WlpprArtSource"
+            android:icon="@drawable/ic_source"
+            android:label="@string/source_name"
+            android:description="@string/source_description">
+            <intent-filter>
+                <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
+            </intent-filter>
+            <meta-data android:name="color" android:value="#040337" />
+        </service>
+
+        <receiver android:name=".DownloadReceiver" >
+            <intent-filter>
+                <action android:name="com.zenstyle.muzei.wlppr.DOWNLOAD" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

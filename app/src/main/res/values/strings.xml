@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wlppr for Muzei</string>
+    <string name="source_name">Wlppr</string>
+    <string name="source_description">A new wallpaper every day</string>
+    <string name="wallpaper_name">Wallpaper #%d</string>
+    <string name="byline">Powered by wlppr.com</string>
+
+    <string name="action_no_artwork_to_share">No artwork to share for now. Please try again later</string>
+    <string name="action_no_artwork_to_download">No artwork to download for now. Please try again later</string>
+    <string name="action_share_artwork">Share artwork</string>
+    <string name="action_download_artwork">Download artwork</string>
+
+</resources>
