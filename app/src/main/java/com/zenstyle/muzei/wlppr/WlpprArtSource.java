@@ -129,7 +129,7 @@ public class WlpprArtSource extends RemoteMuzeiArtSource {
                 .setErrorHandler(new ErrorHandler() {
                     @Override
                     public Throwable handleError(RetrofitError retrofitError) {
-                        int statusCode = retrofitError.getResponse().getStatus();
+                        int statusCode = retrofitError.getResponse() != null ? retrofitError.getResponse().getStatus() : 500;
                         if (retrofitError.isNetworkError() || (500 <= statusCode && statusCode < 600)) {
                             return new RetryException();
                         }
