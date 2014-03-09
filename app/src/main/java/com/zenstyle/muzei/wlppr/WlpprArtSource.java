@@ -141,7 +141,7 @@ public class WlpprArtSource extends RemoteMuzeiArtSource {
                 .build();
 
         WlpprService service = restAdapter.create(WlpprService.class);
-        WlpprService.WlpprResponse response = service.getWallPapers(100);
+        WlpprService.WlpprResponse response = service.getWallPapers(300);
 
         if (response == null || response.wallpapers == null) {
             throw new RetryException();
