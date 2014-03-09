@@ -89,8 +89,8 @@ public class WlpprArtSource extends RemoteMuzeiArtSource {
                 }
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "Check out my Android wallpaper of the day"
-                        + " #WlpprForMuzei\n\n"
+                shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.action_share_default)
+                        + "\n\n"
                         + currentArtwork.getViewIntent().getDataString());
                 shareIntent = Intent.createChooser(shareIntent, getString(R.string.action_share_artwork));
                 shareIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

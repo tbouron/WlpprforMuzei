@@ -11,5 +11,6 @@
     <string name="action_no_artwork_to_download">Aucune œuvre à télécharger pour le moment. Veuillez réesayer plus tard</string>
     <string name="action_share_artwork">Partager l\'œuvre</string>
     <string name="action_download_artwork">Télécharger l\'œuvre</string>
+    <string name="action_share_default">Voici mon fond d\'écran Android pour aujourd\'hui #WlpprForMuzei</string>
 
 </resources>

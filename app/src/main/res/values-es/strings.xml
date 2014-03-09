@@ -11,5 +11,6 @@
     <string name="action_no_artwork_to_download">No magen para descargar por ahora. Por favor, inténtelo de nuevo más tarde</string>
     <string name="action_share_artwork">Compartir imagen</string>
     <string name="action_download_artwork">Descargar imagen</string>
+    <string name="action_share_default">Mira mi fondo de patalla par hoy #WlpprForMuzei</string>
 
 </resources>

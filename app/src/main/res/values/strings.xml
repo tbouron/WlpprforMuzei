@@ -11,5 +11,6 @@
     <string name="action_no_artwork_to_download">No artwork to download for now. Please try again later</string>
     <string name="action_share_artwork">Share artwork</string>
     <string name="action_download_artwork">Download artwork</string>
+    <string name="action_share_default">Check out my Android wallpaper of the day #WlpprForMuzei</string>
 
 </resources>
