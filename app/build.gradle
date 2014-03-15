@@ -23,7 +23,7 @@ android {
     defaultConfig {
         minSdkVersion 17
         targetSdkVersion 19
-        versionCode versionCode.toInteger()
+        versionCode Integer.parseInt(project.versionCode)
         versionName version
     }
 
