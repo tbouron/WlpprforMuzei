@@ -18,13 +18,13 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.1"
+    buildToolsVersion "19.0.3"
 
     defaultConfig {
         minSdkVersion 17
         targetSdkVersion 19
-        versionCode 2
-        versionName "1.0.1"
+        versionCode versionCode.toInteger()
+        versionName version
     }
 
     signingConfigs {

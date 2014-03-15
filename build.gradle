@@ -20,3 +20,10 @@ allprojects {
 }
 
 apply plugin: 'release'
+
+release {
+    failOnPublishNeeded = false
+    preTagCommitMessage = '[RELEASE] Released version: '
+    tagCommitMessage = '[RELEASE] Tagged version: '
+    newVersionCommitMessage = '[RELEASE] Bumped version for next development iteration: '
+}
