@@ -23,7 +23,20 @@ apply plugin: 'release'
 
 release {
     failOnPublishNeeded = false
-    preTagCommitMessage = '[RELEASE] Released version: '
-    tagCommitMessage = '[RELEASE] Tagged version: '
-    newVersionCommitMessage = '[RELEASE] Bumped version for next development iteration: '
+    preTagCommitMessage = '[RELEASE] Released version:'
+    tagCommitMessage = '[RELEASE] Tagged version:'
+    newVersionCommitMessage = '[RELEASE] Bumped version for next development iteration:'
 }
+
+task updateVersionCode << {
+    def oldVersionCode = "${project.versionCode}".toInteger()
+    def newVersionCode = oldVersionCode + 1
+
+    if (oldVersionCode != newVersionCode) {
+        project.ant.propertyfile(file: "gradle.properties") {
+            entry(key: "versionCode", value: "${newVersionCode}")
+        }
+    }
+}
+
+updateVersion.dependsOn updateVersionCode
