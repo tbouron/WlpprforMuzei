@@ -29,6 +29,7 @@ import com.squareup.okhttp.OkHttpClient;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 
 import retrofit.ErrorHandler;
@@ -166,7 +167,7 @@ public class WlpprArtSource extends RemoteMuzeiArtSource {
             }
         }
 
-        String url = String.format("http://wlppr.com/wallpapers/%1$d/%1$d.jpg", id);
+        String url = String.format(Locale.US, "http://wlppr.com/wallpapers/%1$d/%1$d.jpg", id);
 
         LOGD(TAG, "Wallpaper URL: " + url);
 
